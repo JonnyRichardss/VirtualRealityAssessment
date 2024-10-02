@@ -329,7 +329,7 @@ GameObject:
   - component: {fileID: 309538950}
   m_Layer: 0
   m_Name: XR Origin (XR Rig)
-  m_TagString: Untagged
+  m_TagString: Person
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1388,6 +1388,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pedestrian (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 5251595892542365564, guid: 2fc4044065d0e4a4ab6fd1caee26c43c, type: 3}
+      propertyPath: m_TagString
+      value: Person
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2428,6 +2432,10 @@ PrefabInstance:
     - target: {fileID: 5251595892542365564, guid: 2fc4044065d0e4a4ab6fd1caee26c43c, type: 3}
       propertyPath: m_Name
       value: Pedestrian (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5251595892542365564, guid: 2fc4044065d0e4a4ab6fd1caee26c43c, type: 3}
+      propertyPath: m_TagString
+      value: Person
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3615,7 +3623,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6598815579406187037, guid: 18ddb545287c546e19cc77dc9fbb2189, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3761,6 +3769,79 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 931ecb32d754b3f40afc9a688c8cea66, type: 3}
+--- !u!1001 &1452281639
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 5342242380307052501, guid: 2baf66d18908f4143a896b72dedeefec, type: 3}
+      propertyPath: speedMult
+      value: 1.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5342242380307052501, guid: 2baf66d18908f4143a896b72dedeefec, type: 3}
+      propertyPath: WaypointContainer
+      value: 
+      objectReference: {fileID: 421196953}
+    - target: {fileID: 9014544856404233748, guid: 2baf66d18908f4143a896b72dedeefec, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 3f47f4d644d848c4aa8dce558daa5b85, type: 2}
+    - target: {fileID: 9014797617709357950, guid: 2baf66d18908f4143a896b72dedeefec, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 2408c7077c3256541945bfb35ac03ca5, type: 2}
+    - target: {fileID: 9025763010509695174, guid: 2baf66d18908f4143a896b72dedeefec, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -2
+      objectReference: {fileID: 0}
+    - target: {fileID: 9025763010509695174, guid: 2baf66d18908f4143a896b72dedeefec, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.555
+      objectReference: {fileID: 0}
+    - target: {fileID: 9025763010509695174, guid: 2baf66d18908f4143a896b72dedeefec, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 50.66
+      objectReference: {fileID: 0}
+    - target: {fileID: 9025763010509695174, guid: 2baf66d18908f4143a896b72dedeefec, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9025763010509695174, guid: 2baf66d18908f4143a896b72dedeefec, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9025763010509695174, guid: 2baf66d18908f4143a896b72dedeefec, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9025763010509695174, guid: 2baf66d18908f4143a896b72dedeefec, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9025763010509695174, guid: 2baf66d18908f4143a896b72dedeefec, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9025763010509695174, guid: 2baf66d18908f4143a896b72dedeefec, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9025763010509695174, guid: 2baf66d18908f4143a896b72dedeefec, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9028273960866136460, guid: 2baf66d18908f4143a896b72dedeefec, type: 3}
+      propertyPath: m_Name
+      value: SceneCar
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 2baf66d18908f4143a896b72dedeefec, type: 3}
 --- !u!1 &1470250344
 GameObject:
   m_ObjectHideFlags: 0
@@ -3852,6 +3933,10 @@ PrefabInstance:
     - target: {fileID: 5251595892542365564, guid: 2fc4044065d0e4a4ab6fd1caee26c43c, type: 3}
       propertyPath: m_Name
       value: Pedestrian (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5251595892542365564, guid: 2fc4044065d0e4a4ab6fd1caee26c43c, type: 3}
+      propertyPath: m_TagString
+      value: Person
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -5130,6 +5215,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pedestrian
       objectReference: {fileID: 0}
+    - target: {fileID: 5251595892542365564, guid: 2fc4044065d0e4a4ab6fd1caee26c43c, type: 3}
+      propertyPath: m_TagString
+      value: Person
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5191,12 +5280,7 @@ PrefabInstance:
       propertyPath: m_Name
       value: Car 4
       objectReference: {fileID: 0}
-    - target: {fileID: 9055534966755389630, guid: 2baf66d18908f4143a896b72dedeefec, type: 3}
-      propertyPath: m_Convex
-      value: 1
-      objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 9055534966755389630, guid: 2baf66d18908f4143a896b72dedeefec, type: 3}
+    m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -5213,11 +5297,12 @@ SceneRoots:
   - {fileID: 528135663}
   - {fileID: 1246380760}
   - {fileID: 347404905}
-  - {fileID: 336428582570232922}
   - {fileID: 467318586}
+  - {fileID: 336428582570232922}
   - {fileID: 1567524369}
   - {fileID: 815602391}
   - {fileID: 627198342}
   - {fileID: 20736703}
   - {fileID: 421196954}
   - {fileID: 3375281418144748718}
+  - {fileID: 1452281639}

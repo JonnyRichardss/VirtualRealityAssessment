@@ -8,6 +8,8 @@ public class CarRoute : MonoBehaviour
     private int targetWP = 0;
     public GameObject WaypointContainer;
     private List<Transform> wps;
+    private bool waiting = false;
+    public float speedMult = 1;
     // Start is called before the first frame update
     void Start()
     {
@@ -29,6 +31,7 @@ public class CarRoute : MonoBehaviour
     }
     private void FixedUpdate()
     {
+        if (waiting) return;
         Vector3 displacement = wps[targetWP].position - transform.position;
         displacement.y = 0;
         float dist = displacement.magnitude;
@@ -40,7 +43,7 @@ public class CarRoute : MonoBehaviour
         //calculate velocity for this frame
         Vector3 velocity = displacement;
         velocity.Normalize();
-        velocity *= 2.5f;
+        velocity *= 2.5f * speedMult;
         //apply velocity
         Vector3 newPosition = transform.position;
         newPosition += velocity * Time.deltaTime;
@@ -56,5 +59,19 @@ public class CarRoute : MonoBehaviour
     {
         targetWP++;
         targetWP %= wps.Count;
+    }
+    private void OnTriggerEnter(Collider other)
+    {
+        if (!other.isTrigger)
+        {
+            if (other.CompareTag("Car") || other.CompareTag("Person"))
+            {
+                waiting = true;
+            }
+        }
+    }
+    private void OnTriggerExit(Collider other)
+    {
+        waiting = false;
     }
 }
