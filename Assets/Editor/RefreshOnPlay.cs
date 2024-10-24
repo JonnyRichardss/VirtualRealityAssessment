@@ -1,4 +1,6 @@
 using UnityEditor;
+using UnityEditor.SceneManagement;
+using UnityEditor.SearchService;
 
 
 [InitializeOnLoadAttribute]
@@ -15,6 +17,7 @@ public static class PlayRefreshEditor
         if (state == PlayModeStateChange.ExitingEditMode)
         {
             AssetDatabase.Refresh();
+            EditorSceneManager.SaveScene(EditorSceneManager.GetActiveScene());
         }
     }
 }

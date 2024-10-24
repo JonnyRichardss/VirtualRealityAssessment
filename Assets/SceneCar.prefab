@@ -189,6 +189,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 1895433971257526, guid: 28e6efeab80060a44aeb418ac1f92bce, type: 3}
       insertIndex: -1
       addedObject: {fileID: 4109731227686912114}
+    - targetCorrespondingSourceObject: {fileID: 1895433971257526, guid: 28e6efeab80060a44aeb418ac1f92bce, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 5117692922582050323}
     - targetCorrespondingSourceObject: {fileID: 1931939017801198, guid: 28e6efeab80060a44aeb418ac1f92bce, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2481608576421349680}
@@ -228,6 +231,22 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1.9749725, y: 1.2633014, z: 4.4045286}
   m_Center: {x: 0, y: 0.8291478, z: 0.005715728}
+--- !u!208 &5117692922582050323
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9027648544586611788}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.98700005, y: 0.632, z: 2.2020001}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0.82900006, z: 0.006}
+  m_TimeToStationary: 0.5
 --- !u!1 &9027677043944804628 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1931939017801198, guid: 28e6efeab80060a44aeb418ac1f92bce, type: 3}
@@ -297,6 +316,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6be7ecd43c179bf46a55d47263eb799c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  targetNode: 0
   WaypointContainer: {fileID: 0}
   speedMult: 1
 --- !u!54 &7801899956811693579

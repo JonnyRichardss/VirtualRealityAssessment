@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 3300000}
   - component: {fileID: 2300000}
   - component: {fileID: 6500000}
+  - component: {fileID: 9023871654374142608}
   m_Layer: 0
   m_Name: LampPost_A
   m_TagString: Untagged
@@ -107,6 +108,21 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.6091882, y: 0.6025427, z: 4.842849}
   m_Center: {x: 0.0033166409, y: 5.9891396e-15, z: 2.4214487}
+--- !u!114 &9023871654374142608
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2b4c037d011a8de45b3b355318202ddb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Green: 0
+  GreenLight: {fileID: 100004}
+  RedLight: {fileID: 100002}
 --- !u!1 &100002
 GameObject:
   m_ObjectHideFlags: 0
